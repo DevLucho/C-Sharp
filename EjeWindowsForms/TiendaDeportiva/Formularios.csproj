@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7EDDE9FC-3007-44BD-8B01-A05B9F21FFED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TiendaDeportiva</RootNamespace>
+    <AssemblyName>TiendaDeportiva</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Fatcow-Farm-Fresh-Application-form-magnify.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBuqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuqueda.designer.cs">
+      <DependentUpon>FormBuqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormComparendo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormComparendo.Designer.cs">
+      <DependentUpon>FormComparendo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTienda.Designer.cs">
+      <DependentUpon>FormTienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTiendaVideojugos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTiendaVideojugos.designer.cs">
+      <DependentUpon>FormTiendaVideojugos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBuqueda.resx">
+      <DependentUpon>FormBuqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormComparendo.resx">
+      <DependentUpon>FormComparendo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTienda.resx">
+      <DependentUpon>FormTienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTiendaVideojugos.resx">
+      <DependentUpon>FormTiendaVideojugos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84477864-concepto-horizontal-de-banner-de-equipo-deportivo-ilustración-plana-de-concepto-de-vector-horizontal-de.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84477864-concepto-horizontal-de-banner-de-equipo-deportivo-ilustración-plana-de-concepto-de-vector-horizontal-de1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\84477864-concepto-horizontal-de-banner-de-equipo-deportivo-ilustración-plana-de-concepto-de-vector-horizontal-de2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BANNER-VIDEO-JUEGOS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fatcow-Farm-Fresh-Application-form-magnify.ico" />
+    <Content Include="Resources\CALL.jpg" />
+    <None Include="Resources\NBA1.jpg" />
+    <None Include="Resources\CRASH1.png" />
+    <None Include="Resources\CALL1.jpg" />
+    <Content Include="Resources\CRASH.png" />
+    <Content Include="Resources\NBA.jpg" />
+    <Content Include="Resources\NEDD.jpg" />
+    <None Include="Resources\NEDD1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
