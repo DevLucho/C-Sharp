@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{757CD897-0597-4CFF-A76C-CFC936E56480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{A6907588-21DF-4FC5-A6F9-8F716E2EDC70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "Views\Views.csproj", "{42761853-96B6-4BEE-953A-9E1D10968593}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{757CD897-0597-4CFF-A76C-CFC936E56480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757CD897-0597-4CFF-A76C-CFC936E56480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757CD897-0597-4CFF-A76C-CFC936E56480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757CD897-0597-4CFF-A76C-CFC936E56480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6907588-21DF-4FC5-A6F9-8F716E2EDC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6907588-21DF-4FC5-A6F9-8F716E2EDC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6907588-21DF-4FC5-A6F9-8F716E2EDC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6907588-21DF-4FC5-A6F9-8F716E2EDC70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42761853-96B6-4BEE-953A-9E1D10968593}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42761853-96B6-4BEE-953A-9E1D10968593}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42761853-96B6-4BEE-953A-9E1D10968593}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42761853-96B6-4BEE-953A-9E1D10968593}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2749A4BE-8135-4933-83A2-66485A7B24EC}
+	EndGlobalSection
+EndGlobal
