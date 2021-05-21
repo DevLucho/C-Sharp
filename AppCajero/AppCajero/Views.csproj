@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D65C3F1-FB49-4798-9A49-F534FBC07225}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppCajero</RootNamespace>
+    <AssemblyName>AppCajero</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormOpciones.Designer.cs">
+      <DependentUpon>FormOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCajero.Designer.cs">
+      <DependentUpon>FormCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPago.Designer.cs">
+      <DependentUpon>FormPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransfer.Designer.cs">
+      <DependentUpon>FormTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormCajero.resx">
+      <DependentUpon>FormCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOpciones.resx">
+      <DependentUpon>FormOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPago.resx">
+      <DependentUpon>FormPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTransfer.resx">
+      <DependentUpon>FormTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cajero.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interfaz-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interfaz-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interfaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn-rigth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{8b9a4208-b104-4207-a805-2d92ba5afd0e}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interfaz-2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
